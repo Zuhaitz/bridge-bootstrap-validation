@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-form {
+  width: 600px;
+  margin-top: 60px;
+  padding: 30px 30px;
+
+  border-radius: 30px;
+
+  background-color: whitesmoke;
+}
+
+.user-form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
