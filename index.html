@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -42,28 +42,41 @@
     <main>
       <section class="user-form">
         <h1>Crear Usuario</h1>
-        <form>
+        <form id="add-user-form">
           <div class="mb-3">
             <label for="userName">Nombre</label>
-            <input type="text" class="form-control" id="userName" />
+            <input type="text" class="form-control" id="userName" required />
+            <div class="invalid-feedback">Inserte un nombre</div>
           </div>
 
           <div class="mb-3">
             <label for="userMail">Correo</label>
-            <input type="email" class="form-control" id="userName" />
+            <input type="email" class="form-control" id="userMail" required />
           </div>
 
           <div class="mb-3">
             <label for="userPassword">Contraseña</label>
-            <input type="password" class="form-control" id="userName" />
+            <input
+              type="password"
+              class="form-control"
+              id="userPassword"
+              required
+            />
           </div>
 
           <div class="mb-3">
             <label for="userPasswordRe">Repite Contraseña</label>
-            <input type="password" class="form-control" id="userName" />
+            <input
+              type="password"
+              class="form-control"
+              id="userPasswordRe"
+              required
+            />
           </div>
 
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            Enviar
+          </button>
         </form>
       </section>
     </main>
