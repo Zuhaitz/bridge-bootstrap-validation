@@ -25,3 +25,15 @@ main {
   margin-bottom: 20px;
   text-align: center;
 }
+
+#alerts-section {
+  position: absolute;
+  top: 5px;
+}
+
+.alert {
+  text-align: center;
+  width: 70vw;
+  margin-bottom: 5px;
+  padding: 10px 0;
+}

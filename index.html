@@ -46,12 +46,11 @@
           <div class="mb-3">
             <label for="userName">Nombre</label>
             <input type="text" class="form-control" id="userName" required />
-            <div class="invalid-feedback">Inserte un nombre</div>
           </div>
 
           <div class="mb-3">
-            <label for="userMail">Correo</label>
-            <input type="email" class="form-control" id="userMail" required />
+            <label for="userEmail">Correo</label>
+            <input type="email" class="form-control" id="userEmail" required />
           </div>
 
           <div class="mb-3">
@@ -60,8 +59,12 @@
               type="password"
               class="form-control"
               id="userPassword"
+              aria-describedby="passwordHelp"
               required
             />
+            <div id="passwordHelp" class="form-text">
+              Mínimo 8 caracteres, con al menos una letra o un número
+            </div>
           </div>
 
           <div class="mb-3">
@@ -79,6 +82,8 @@
           </button>
         </form>
       </section>
+
+      <section id="alerts-section"></section>
     </main>
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
