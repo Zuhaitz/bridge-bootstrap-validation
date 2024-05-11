@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 
-main {
+.form-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,4 +36,19 @@ main {
   width: 70vw;
   margin-bottom: 5px;
   padding: 10px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  margin: 10px;
 }

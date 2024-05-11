@@ -78,8 +78,8 @@ function checkFormValidity() {
 }
 
 function addAlert(message, type) {
-  const container = document.createElement("div");
-  // container.className = "alert-container";
+  let container = document.createElement("div");
+
   container.innerHTML = [
     `<div class="alert alert-${type}" role="alert">`,
     `   <div>${message}</div>`,

@@ -46,55 +46,57 @@
       </nav>
     </header>
     <main>
-      <section class="user-form">
-        <h1>Crear Usuario</h1>
-        <form id="add-user-form">
-          <div class="mb-3">
-            <label for="userName">Nombre</label>
-            <input type="text" class="form-control" id="userName" required />
-          </div>
-
-          <div class="mb-3">
-            <label for="userEmail">Correo</label>
-            <input type="email" class="form-control" id="userEmail" required />
-          </div>
-
-          <div class="mb-3">
-            <label for="userPassword">Contraseña</label>
-            <input
-              type="password"
-              class="form-control"
-              id="userPassword"
-              aria-describedby="passwordHelp"
-              required
-            />
-            <div id="passwordHelp" class="form-text">
-              Mínimo 8 caracteres, con al menos una letra o un número
+      <section class="form-container">
+        <div class="user-form">
+          <h1>Crear Usuario</h1>
+          <form id="add-user-form">
+            <div class="mb-3">
+              <label for="userName">Nombre</label>
+              <input type="text" class="form-control" id="userName" required />
             </div>
-          </div>
 
-          <div class="mb-3">
-            <label for="userPasswordRe">Repite Contraseña</label>
-            <input
-              type="password"
-              class="form-control"
-              id="userPasswordRe"
-              required
-            />
-          </div>
+            <div class="mb-3">
+              <label for="userEmail">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                id="userEmail"
+                required
+              />
+            </div>
 
-          <button type="submit" class="btn btn-primary" id="submitBtn">
-            Enviar
-          </button>
-        </form>
+            <div class="mb-3">
+              <label for="userPassword">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="userPassword"
+                aria-describedby="passwordHelp"
+                required
+              />
+              <div id="passwordHelp" class="form-text">
+                Mínimo 8 caracteres, con al menos una letra o un número
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="userPasswordRe">Repite Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="userPasswordRe"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Enviar
+            </button>
+          </form>
+        </div>
       </section>
 
       <section id="alerts-section"></section>
     </main>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script> -->
   </body>
 </html>
